@@ -1,11 +1,12 @@
 import yaml from 'js-yaml';
 import { Post, Category, Author } from '@/types/post';
 import { calculateReadingTime } from './readingTime';
+import profileImg from '@/assets/profile.png';
 
 export const DEFAULT_AUTHOR: Author = {
   name: 'Hari Mohan',
   role: 'Senior Backend & AI Infrastructure Engineer',
-  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&h=256&q=80',
+  avatar: profileImg,
   bio: 'Specializing in distributed systems, high-throughput Python/FastAPI architectures, cloud orchestration with Kubernetes, and production LLM inference infrastructure.',
   github: 'https://github.com/harimohan1990',
   linkedin: 'https://www.linkedin.com/in/hari-m-47299b54',
