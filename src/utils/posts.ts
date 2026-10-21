@@ -10,7 +10,8 @@ export const DEFAULT_AUTHOR: Author = {
   bio: 'Specializing in distributed systems, high-throughput Python/FastAPI architectures, cloud orchestration with Kubernetes, and production LLM inference infrastructure.',
   github: 'https://github.com/harimohan1990',
   linkedin: 'https://www.linkedin.com/in/hari-m-47299b54',
-  twitter: 'https://twitter.com/harimohan1990',
+  twitter: 'https://x.com/Siliconvallybg',
+  instagram: 'https://www.instagram.com/er.harivibes',
 };
 
 export function parseMarkdown(rawContent: string, filepath: string): Post | null {

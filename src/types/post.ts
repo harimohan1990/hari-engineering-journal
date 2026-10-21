@@ -22,6 +22,7 @@ export interface Author {
   github: string;
   linkedin: string;
   twitter?: string;
+  instagram?: string;
 }
 
 export interface PostFrontmatter {

@@ -10,11 +10,13 @@ import {
   MessageSquare,
 } from 'lucide-react';
 import { DEFAULT_AUTHOR } from '@/utils/posts';
-import { GithubIcon, LinkedinIcon } from '@/components/common/SocialIcons';
+import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from '@/components/common/SocialIcons';
 
 export const AboutPage: React.FC = () => {
   const author = DEFAULT_AUTHOR;
   const linkedInUrl = 'https://www.linkedin.com/in/hari-m-47299b54';
+  const twitterUrl = 'https://x.com/Siliconvallybg';
+  const instagramUrl = 'https://www.instagram.com/er.harivibes';
 
   const competencies = [
     {
@@ -102,10 +104,10 @@ export const AboutPage: React.FC = () => {
               href="https://github.com/harimohan1990"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-dark-surface hover:bg-dark-elevated text-slate-200 text-xs font-semibold border border-dark-border transition-colors light:bg-white light:border-slate-300 light:text-slate-800"
+              className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-dark-surface hover:bg-dark-elevated text-slate-200 text-xs font-semibold border border-dark-border transition-colors light:bg-white light:border-slate-300 light:text-slate-800"
             >
               <GithubIcon size={16} />
-              <span>GitHub (harimohan1990)</span>
+              <span>GitHub</span>
               <ExternalLink className="w-3 h-3 text-slate-500" />
             </a>
 
@@ -113,10 +115,32 @@ export const AboutPage: React.FC = () => {
               href={linkedInUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-dark-surface hover:bg-dark-elevated text-slate-200 text-xs font-semibold border border-dark-border transition-colors light:bg-white light:border-slate-300 light:text-slate-800"
+              className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-dark-surface hover:bg-dark-elevated text-slate-200 text-xs font-semibold border border-dark-border transition-colors light:bg-white light:border-slate-300 light:text-slate-800"
             >
               <LinkedinIcon size={16} className="text-brand-400" />
-              <span>LinkedIn Profile</span>
+              <span>LinkedIn</span>
+              <ExternalLink className="w-3 h-3 text-slate-500" />
+            </a>
+
+            <a
+              href={twitterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-dark-surface hover:bg-dark-elevated text-slate-200 text-xs font-semibold border border-dark-border transition-colors light:bg-white light:border-slate-300 light:text-slate-800"
+            >
+              <TwitterIcon size={15} className="text-cyanBrand-500" />
+              <span>@Siliconvallybg</span>
+              <ExternalLink className="w-3 h-3 text-slate-500" />
+            </a>
+
+            <a
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-dark-surface hover:bg-dark-elevated text-slate-200 text-xs font-semibold border border-dark-border transition-colors light:bg-white light:border-slate-300 light:text-slate-800"
+            >
+              <InstagramIcon size={16} className="text-rose-400" />
+              <span>@er.harivibes</span>
               <ExternalLink className="w-3 h-3 text-slate-500" />
             </a>
           </div>
@@ -134,27 +158,27 @@ export const AboutPage: React.FC = () => {
               Get in Touch & Connect
             </h3>
             <p className="text-xs text-slate-400 light:text-slate-600">
-              Reach out for architectural discussions, systems collaborations, or advisory roles.
+              Reach out for architectural discussions, systems collaborations, or engineering advisory.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2">
           <a
             href={linkedInUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-xl border border-dark-border bg-dark-bg/60 hover:border-brand-400 transition-all flex items-center space-x-3 group light:bg-white light:border-slate-200"
+            className="p-3.5 rounded-xl border border-dark-border bg-dark-bg/60 hover:border-brand-400 transition-all flex items-center space-x-3 group light:bg-white light:border-slate-200"
           >
             <div className="p-2 rounded-lg bg-dark-surface group-hover:bg-brand-950/40 text-brand-400">
-              <LinkedinIcon size={20} />
+              <LinkedinIcon size={18} />
             </div>
             <div>
               <div className="text-xs font-bold text-slate-200 group-hover:text-brand-400 light:text-slate-900">
-                LinkedIn Message
+                LinkedIn
               </div>
-              <div className="text-[11px] text-slate-400 font-mono truncate max-w-[200px]">
-                linkedin.com/in/hari-m-47299b54
+              <div className="text-[10px] text-slate-400 font-mono truncate max-w-[120px]">
+                hari-m-47299b54
               </div>
             </div>
           </a>
@@ -163,17 +187,55 @@ export const AboutPage: React.FC = () => {
             href="https://github.com/harimohan1990"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-xl border border-dark-border bg-dark-bg/60 hover:border-brand-400 transition-all flex items-center space-x-3 group light:bg-white light:border-slate-200"
+            className="p-3.5 rounded-xl border border-dark-border bg-dark-bg/60 hover:border-brand-400 transition-all flex items-center space-x-3 group light:bg-white light:border-slate-200"
           >
             <div className="p-2 rounded-lg bg-dark-surface group-hover:bg-brand-950/40 text-brand-400">
-              <GithubIcon size={20} />
+              <GithubIcon size={18} />
             </div>
             <div>
               <div className="text-xs font-bold text-slate-200 group-hover:text-brand-400 light:text-slate-900">
-                GitHub Repositories
+                GitHub
               </div>
-              <div className="text-[11px] text-slate-400 font-mono">
-                github.com/harimohan1990
+              <div className="text-[10px] text-slate-400 font-mono">
+                harimohan1990
+              </div>
+            </div>
+          </a>
+
+          <a
+            href={twitterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3.5 rounded-xl border border-dark-border bg-dark-bg/60 hover:border-brand-400 transition-all flex items-center space-x-3 group light:bg-white light:border-slate-200"
+          >
+            <div className="p-2 rounded-lg bg-dark-surface group-hover:bg-brand-950/40 text-cyanBrand-500">
+              <TwitterIcon size={18} />
+            </div>
+            <div>
+              <div className="text-xs font-bold text-slate-200 group-hover:text-brand-400 light:text-slate-900">
+                X (Twitter)
+              </div>
+              <div className="text-[10px] text-slate-400 font-mono truncate max-w-[120px]">
+                @Siliconvallybg
+              </div>
+            </div>
+          </a>
+
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3.5 rounded-xl border border-dark-border bg-dark-bg/60 hover:border-brand-400 transition-all flex items-center space-x-3 group light:bg-white light:border-slate-200"
+          >
+            <div className="p-2 rounded-lg bg-dark-surface group-hover:bg-brand-950/40 text-rose-400">
+              <InstagramIcon size={18} />
+            </div>
+            <div>
+              <div className="text-xs font-bold text-slate-200 group-hover:text-brand-400 light:text-slate-900">
+                Instagram
+              </div>
+              <div className="text-[10px] text-slate-400 font-mono truncate max-w-[120px]">
+                @er.harivibes
               </div>
             </div>
           </a>

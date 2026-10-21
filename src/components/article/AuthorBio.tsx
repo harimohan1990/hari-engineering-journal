@@ -1,6 +1,6 @@
 import React from 'react';
 import { Author } from '@/types/post';
-import { GithubIcon, LinkedinIcon, TwitterIcon } from '@/components/common/SocialIcons';
+import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from '@/components/common/SocialIcons';
 
 interface AuthorBioProps {
   author: Author;
@@ -54,10 +54,21 @@ export const AuthorBio: React.FC<AuthorBioProps> = ({ author }) => {
               href={author.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter profile"
+              aria-label="X (Twitter) profile"
               className="text-slate-400 hover:text-cyanBrand-500 transition-colors"
             >
               <TwitterIcon size={18} />
+            </a>
+          )}
+          {author.instagram && (
+            <a
+              href={author.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram profile"
+              className="text-slate-400 hover:text-rose-400 transition-colors"
+            >
+              <InstagramIcon size={18} />
             </a>
           )}
         </div>

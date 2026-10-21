@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Terminal, Rss, ArrowUpRight, Cpu } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '../common/SocialIcons';
+import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from '../common/SocialIcons';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
             <p className="text-sm text-slate-400 light:text-slate-600 max-w-md leading-relaxed">
               Engineering scalable backends. Exploring distributed systems. Building intelligent infrastructure. Written for senior backend engineers, systems architects, and infrastructure specialists.
             </p>
-            <div className="flex items-center space-x-3 pt-2">
+            <div className="flex items-center space-x-2 pt-2">
               <a
                 href="https://github.com/harimohan1990/hari-engineering-journal"
                 target="_blank"
@@ -41,6 +41,24 @@ export const Footer: React.FC = () => {
                 className="p-2 rounded-lg bg-dark-surface hover:bg-dark-elevated text-slate-400 hover:text-brand-400 border border-dark-border transition-colors light:bg-white light:border-slate-200 light:hover:bg-slate-50"
               >
                 <LinkedinIcon size={16} />
+              </a>
+              <a
+                href="https://x.com/Siliconvallybg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter) Profile"
+                className="p-2 rounded-lg bg-dark-surface hover:bg-dark-elevated text-slate-400 hover:text-cyanBrand-500 border border-dark-border transition-colors light:bg-white light:border-slate-200 light:hover:bg-slate-50"
+              >
+                <TwitterIcon size={15} />
+              </a>
+              <a
+                href="https://www.instagram.com/er.harivibes"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Profile"
+                className="p-2 rounded-lg bg-dark-surface hover:bg-dark-elevated text-slate-400 hover:text-rose-400 border border-dark-border transition-colors light:bg-white light:border-slate-200 light:hover:bg-slate-50"
+              >
+                <InstagramIcon size={16} />
               </a>
               <a
                 href="/rss.xml"
