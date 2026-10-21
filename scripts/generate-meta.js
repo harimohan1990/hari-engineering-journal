@@ -112,12 +112,15 @@ ${posts
   fs.writeFileSync(path.join(DIST_DIR, 'rss.xml'), rssXml);
   console.log('✓ Generated dist/rss.xml');
 
-  // 4. Ensure 404.html exists in dist
+  // 4. Ensure 404.html and .nojekyll exist in dist
   const public404 = path.resolve(__dirname, '../public/404.html');
   if (fs.existsSync(public404)) {
     fs.copyFileSync(public404, path.join(DIST_DIR, '404.html'));
     console.log('✓ Verified dist/404.html');
   }
+
+  fs.writeFileSync(path.join(DIST_DIR, '.nojekyll'), '');
+  console.log('✓ Generated dist/.nojekyll');
 }
 
 generateMetadata();
