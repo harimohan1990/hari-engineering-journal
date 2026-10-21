@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Backend Engineering Journal</title>
+  <link>https://harimohan1990.github.io/hari-engineering-journal</link>
+  <description>Engineering scalable backends. Exploring distributed systems. Building intelligent infrastructure.</description>
+  <language>en-us</language>
+  <lastBuildDate>Wed, 21 Oct 2026 11:54:08 GMT</lastBuildDate>
+  <atom:link href="https://harimohan1990.github.io/hari-engineering-journal/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title><![CDATA[Harness Engineering: Building Reliable AI Agent Systems]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/harness-engineering-reliable-ai-agents</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/harness-engineering-reliable-ai-agents</guid>
+    <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+    <category>RAG and AI Agents</category>
+    <description><![CDATA[Why naked LLM loops fail in production, and how to build deterministic execution harnesses with state machines, verification checkpoints, and sandboxed tool execution.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Python Backend Architecture with FastAPI and Kubernetes]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/python-backend-architecture-fastapi-kubernetes</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/python-backend-architecture-fastapi-kubernetes</guid>
+    <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Docker and Kubernetes</category>
+    <description><![CDATA[A production blueprint for deploying high-concurrency FastAPI applications on Kubernetes: graceful shutdowns, worker sizing, asyncpg pools, and zero-downtime rolling updates.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Building Scalable REST APIs with FastAPI: Async, Pydantic V2, and Zero-Overhead Patterns]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/building-scalable-rest-apis-fastapi</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/building-scalable-rest-apis-fastapi</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+    <category>FastAPI and API Design</category>
+    <description><![CDATA[How to avoid event-loop blocking, harness Pydantic V2 speedups, implement clean dependency injection, and handle 15,000+ RPS with clean architectural boundaries.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[PostgreSQL Connection Pooling: Performance and Best Practices]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/postgresql-connection-pooling-performance-best-practices</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/postgresql-connection-pooling-performance-best-practices</guid>
+    <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Database Engineering</category>
+    <description><![CDATA[Why PostgreSQL crashes under 1,000 direct connections, how process-fork overhead degrades CPU cache, and how to configure PgBouncer transaction pooling with Asyncpg.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Redis Caching Strategies for High-Traffic Applications: Stampede Prevention, Data Structures, and L1/L2 Hierarchies]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/redis-caching-strategies-high-traffic</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/redis-caching-strategies-high-traffic</guid>
+    <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+    <category>System Design</category>
+    <description><![CDATA[Mitigate cache stampedes with probabilistic early expiration, optimize memory usage with packed hashes, and build resilient multi-tier L1/L2 caching systems.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Designing Event-Driven Microservices with Message Queues: The Outbox Pattern, Deduplication, and Resilient Consumers]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/designing-event-driven-microservices-message-queues</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/designing-event-driven-microservices-message-queues</guid>
+    <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+    <category>Distributed Systems</category>
+    <description><![CDATA[Solve the dual-write problem, guarantee at-least-once message delivery with transactional outbox, and architect strictly idempotent consumers across distributed services.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Production LLM Inference: Latency, Throughput, and Cost Optimization at Scale]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/production-llm-inference-latency-throughput-cost</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/production-llm-inference-latency-throughput-cost</guid>
+    <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
+    <category>LLM Infrastructure and Inference</category>
+    <description><![CDATA[Dissecting PagedAttention, continuous batching, KV-cache fragmentation, speculative decoding, and the real hardware economics of serving 70B models.]]></description>
+  </item>
+  <item>
+    <title><![CDATA[Building an LLM Evaluation and Benchmarking Toolkit: Metrics, Regression Gates, and Automated Scoring]]></title>
+    <link>https://harimohan1990.github.io/hari-engineering-journal/posts/building-llm-evaluation-benchmarking-toolkit</link>
+    <guid>https://harimohan1990.github.io/hari-engineering-journal/posts/building-llm-evaluation-benchmarking-toolkit</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <category>Generative AI Engineering</category>
+    <description><![CDATA[Why vibing prompts fails at scale, and how to engineer deterministic evaluation pipelines, LLM-as-a-Judge rubrics, and automated regression test gates in CI/CD.]]></description>
+  </item>
+</channel>
+</rss>
